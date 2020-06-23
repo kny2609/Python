@@ -42,3 +42,29 @@ del dic1[3]
 print('dic1 : ', dic1)
 
 # 딕셔너리 관련 함수 p93 ~ p96
+
+# Key 리스트 만들기(keys)
+a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print(a.keys())
+print(list(a.keys()))
+
+# value 리스트 만들기(values)
+print(a.values())
+
+# key, value 쌍 얻기(items)
+print(a.items())
+
+# key:value 쌍 모두 지우기(clear)
+a.clear()
+print(a)
+
+# key로 value 얻기(get)
+a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print(a.get('name'))
+print(a.get('phone'))
+
+# 해당 key가 딕셔너리 안에 있는지 조사하기(in)
+a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}
+print('name' in a)
+print('email' in a)
+
